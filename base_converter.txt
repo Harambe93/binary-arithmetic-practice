@@ -1,0 +1,70 @@
+------------------------------------------------------------------------------------------------
+IN_BINARY---------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+
+CONVERT BINARY TO DECIMAL:
+-> Multiply the base number digit (2) by the power of the base numbers digit location and sum
+    all the multipliers.
+-> echo "ibase=2; 11010101" | bc
+
+CONVERT BINARY TO HEXADECIMAL:
+-> Starting from the last binary digit to the first, split the binary number into groups of
+    four binary digits. For each of the binary groups, get the hexadecimal equivalent.
+-> echo "ibase=2;obase=16; 1010101" | bc
+
+CONVERT BINARY TO OCTAL:
+-> Starting from the last binary digit to the first, split the binary number into groups of
+    three binary digits. For each of the binary groups, get the octal equivalent via table.
+-> echo "ibase=2;obase=8; 1010101" | bc
+
+------------------------------------------------------------------------------------------------
+IN_DECIMAL--------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+
+CONVERT DECIMAL TO BINARY:
+-> Convert to hexadecimal first and use then the lookup table to retrieve the binary value.
+-> echo "obase=2; 23" | bc
+
+CONVERT DECIMAL TO HEXADECIMAL:
+-> Division-/Multiplication method
+-> printf %xn 2400   OR  echo "obase=16; 2400" | bc
+
+CONVERT DECIMAL TO OCTAL:
+-> Convert to hexadecimal and octal first, then use the binary to octal method.
+-> echo "obase=8; 23" | bc
+
+------------------------------------------------------------------------------------------------
+IN_OCTAL----------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+
+CONVERT OCTAL TO BINARY:
+-> Take every individual octal digit in the string and convert it to the corresponding three-
+    digit binary number. The resulting number as a whole represents the binary number.
+-> echo "ibase=8;obase=2; 254" | bc
+
+CONVERT OCTAL TO DECIMAL:
+-> Multiply the base number digit (8) by the power of the base numbers digit location and sum
+    all the multipliers.
+-> echo "ibase=8; 723" | bc
+
+CONVERT OCTAL TO HEXADECIMAL:
+-> Convert the octal to binary first and then use the lookup table to retrieve the hex value.
+-> echo "ibase=8;obase=16; 254" | bc
+
+------------------------------------------------------------------------------------------------
+IN_HEXADECIMAL----------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+
+CONVERT HEXADECIMAL TO BINARY:
+-> Use the lookup table to retrieve the four-digit binary values.
+-> echo "ibase=16;obase=2; 960" | bc
+
+CONVERT HEXADECIMAL TO DECIMAL:
+-> Multiply the base number digit (16) by the power of the base numbers digit location and sum
+    all the multipliers.
+-> echo $((0x960))  OR  echo "ibase=16; 960" | bc
+
+CONVERT HEXADECIMAL TO OCTAL:
+-> Convert to binary first. Then use the lookup table to get the matching octal for the three-
+    digit binary value.
+-> echo "ibase=16;obase=8; 960" | bc
