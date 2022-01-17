@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/ulinja/development/python/binary-arithmetic-practice/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+Binary Arithmetic Practice	README.md	/^# Binary Arithmetic Practice$/;"	c
+largest_number	addition.py	/^largest_number = 255$/;"	v
+largest_number	subtraction.py	/^largest_number = 255$/;"	v
+main	hex2bin.py	/^def main():$/;"	f
+max_bin_char_count	addition.py	/^max_bin_char_count = max(len(x_bin_str), len(y_bin_str), len(z_bin_str))$/;"	v
+max_bin_char_count	subtraction.py	/^max_bin_char_count = max(len(x_bin_str), len(y_bin_str), len(z_bin_str))$/;"	v
+max_int_char_count	addition.py	/^max_int_char_count = max(len(x_int_str), len(y_int_str), len(z_int_str))$/;"	v
+max_int_char_count	subtraction.py	/^max_int_char_count = max(len(x_int_str), len(y_int_str), len(z_int_str))$/;"	v
+x_bin	addition.py	/^x_bin = bin(x_int)$/;"	v
+x_bin	addition.py	/^x_bin = x_bin_str.rjust(max_bin_char_count, ' ')$/;"	v
+x_bin	subtraction.py	/^x_bin = bin(x_int)$/;"	v
+x_bin	subtraction.py	/^x_bin = x_bin_str.rjust(max_bin_char_count, ' ')$/;"	v
+x_bin_str	addition.py	/^    x_bin_str = '- ' + bin(x_int)[3:]$/;"	v
+x_bin_str	addition.py	/^    x_bin_str = bin(x_int)[2:]$/;"	v
+x_bin_str	subtraction.py	/^    x_bin_str = '- ' + bin(x_int)[3:]$/;"	v
+x_bin_str	subtraction.py	/^    x_bin_str = bin(x_int)[2:]$/;"	v
+x_int	addition.py	/^x_int = randint(0, largest_number)$/;"	v
+x_int	subtraction.py	/^x_int = randint(0, largest_number)$/;"	v
+x_int_str	addition.py	/^    x_int_str = str(x_int)$/;"	v
+x_int_str	addition.py	/^x_int_str = x_int_str.rjust(max_int_char_count, ' ')$/;"	v
+x_int_str	subtraction.py	/^    x_int_str = str(x_int)$/;"	v
+x_int_str	subtraction.py	/^x_int_str = x_int_str.rjust(max_int_char_count, ' ')$/;"	v
+y_bin	addition.py	/^y_bin = bin(y_int)$/;"	v
+y_bin	addition.py	/^y_bin = y_bin_str.rjust(max_bin_char_count, ' ')$/;"	v
+y_bin	subtraction.py	/^y_bin = bin(y_int)$/;"	v
+y_bin	subtraction.py	/^y_bin = y_bin_str.rjust(max_bin_char_count, ' ')$/;"	v
+y_bin_str	addition.py	/^    y_bin_str = '- ' + bin(y_int)[3:]$/;"	v
+y_bin_str	addition.py	/^    y_bin_str = bin(y_int)[2:]$/;"	v
+y_bin_str	subtraction.py	/^    y_bin_str = '- ' + bin(y_int)[3:]$/;"	v
+y_bin_str	subtraction.py	/^    y_bin_str = bin(y_int)[2:]$/;"	v
+y_int	addition.py	/^y_int = randint(0, largest_number)$/;"	v
+y_int	subtraction.py	/^y_int = randint(0, largest_number)$/;"	v
+y_int_str	addition.py	/^    y_int_str = str(y_int)$/;"	v
+y_int_str	addition.py	/^y_int_str = y_int_str.rjust(max_int_char_count, ' ')$/;"	v
+y_int_str	subtraction.py	/^    y_int_str = str(y_int)$/;"	v
+y_int_str	subtraction.py	/^y_int_str = y_int_str.rjust(max_int_char_count, ' ')$/;"	v
+z_bin	addition.py	/^z_bin = bin(z_int)$/;"	v
+z_bin	addition.py	/^z_bin = z_bin_str.rjust(max_bin_char_count, ' ')$/;"	v
+z_bin	subtraction.py	/^z_bin = bin(z_int)$/;"	v
+z_bin	subtraction.py	/^z_bin = z_bin_str.rjust(max_bin_char_count, ' ')$/;"	v
+z_bin_str	addition.py	/^    z_bin_str = '- ' + bin(z_int)[3:]$/;"	v
+z_bin_str	addition.py	/^    z_bin_str = bin(z_int)[2:]$/;"	v
+z_bin_str	subtraction.py	/^    z_bin_str = '- ' + bin(z_int)[3:]$/;"	v
+z_bin_str	subtraction.py	/^    z_bin_str = bin(z_int)[2:]$/;"	v
+z_int	addition.py	/^z_int = x_int + y_int$/;"	v
+z_int	subtraction.py	/^z_int = x_int - y_int$/;"	v
+z_int_str	addition.py	/^    z_int_str = str(z_int)$/;"	v
+z_int_str	addition.py	/^z_int_str = z_int_str.rjust(max_int_char_count, ' ')$/;"	v
+z_int_str	subtraction.py	/^    z_int_str = str(z_int)$/;"	v
+z_int_str	subtraction.py	/^z_int_str = z_int_str.rjust(max_int_char_count, ' ')$/;"	v
